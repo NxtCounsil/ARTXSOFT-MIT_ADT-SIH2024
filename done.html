@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtXSoft - SIH 2024</title>
+    <style>
+        /* Loading screen styles */
+        #loadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 1s ease-out;
+        }
+        #loadingScreen img {
+            width: 100px; /* Adjust size as needed */
+            animation: blink 1.5s ease-in-out 3; /* Smooth blink duration, 3 times */
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #212121;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #171717;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
+            margin: 0 20px;
+        }
+        header .cross {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        .content {
+            flex: 1;
+            margin-top: 80px; /* Adjust based on the height of the header */
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 2.2rem;
+        }
+        .card {
+            background-color: #212121;
+            border-radius: 10px;
+            padding: 00px;
+            margin: 10px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 90%;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #171717;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="loadingScreen">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9JVrW9kpXIQSrmqN4wIcl4VgqLxeXLxL0oQNniLQ9-Ii8ovCbkUZNc4H61kaJdB9VEOJLgSQIc9WAnsSV7njLOO1Sbf5FSn1UN0uDlyhL-oo3wOOK275aJ5nsiMEoYY0hUc32vZgmgbWcB9aozUduph_cX2tvGvwWCdudJa8FQl11TJSLvbeXpemuYZlM/s3264/20240409_181201.png" alt="Loading">
+    </div>
+<header>
+    <img src="https://mituniversity.ac.in/assets_web/images/LOGO2.png" alt="MIT ADT">
+    <div class="cross">×</div>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6hwDTxhsj7La_ocmo0pQLOSFsGuDg_29FPS1sipee5N2pb18-JPVOiSdja1dzYFvmMsr5K98cXstxYE5IMTBHni2UVVUaKpGMvvwP0pTEGJ2V4zmA1df_vKc_qh5oSehBE7WVPRzK9x2zPOd0uY12Xe7m1axuUp5iqYjeSO2F4a7PkHpJhAfypR4qAvkw/s3264/20240409_181702.png" alt="ARTXSOFT">
+</header>
+
+<div class="content">
+    
+
+    <h1>Successfully Applied!!!</h1>
+    <p>We will contact you ASAP!!!</p>
+    <div class="card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuWC3clTN1aE4BHRVQc2XvCqpoxsPPqzsOKnCnF6oDCrJgmLZGrv1Q0PRVW6D49wcM0zvEQDlvGV2L1tBT3VtX1-pbxmejRVb7jvpMgdN-71vn-eD-OFTT69Pwo_ujz5-D-9oUYgVCUooa0fL1_c3TIVndRY6jdYM72sDG2suobfa0YOW5VAj3L-xQN-xn/s3264/20240809_201124.jpg" alt="SIH Logo">
+    </div> 
+</div>
+
+<footer>
+    <p>&copy; 2024 ArtXSoft. All rights reserved.</p>
+    <p>Contact Number: +91 8237913246</p>
+</footer>
+
+
+
+<script>
+    // Hide loading screen after 3 seconds
+    setTimeout(() => {
+        const loadingScreen = document.getElementById('loadingScreen');
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 1000); // Match the opacity transition duration
+    }, 3000); // Hide after 3 seconds (3 blinks)
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtXSoft - SIH 2024</title>
+    <style>
+        /* Loading screen styles */
+        #loadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 1s ease-out;
+        }
+        #loadingScreen img {
+            width: 100px; /* Adjust size as needed */
+            animation: blink 1.5s ease-in-out 3; /* Smooth blink duration, 3 times */
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #212121;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #171717;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
+            margin: 0 20px;
+        }
+        header .cross {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+        .content {
+            flex: 1;
+            margin-top: 80px; /* Adjust based on the height of the header */
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 2.2rem;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .card02 {
+            background-color: #212121;
+            border: 4px solid #171717;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 594px;
+            text-align: left;
+            color: white;
+        }
+        .card02 form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .card02 input, .card02 select, .card02 button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #171717;
+            font-size: 1rem;
+            background-color: #363636;
+            color: #fff;
+        }
+        .card02 input::placeholder, .card02 select::placeholder {
+            color: #666;
+        }
+        .card02 button {
+            background-color: #007bff; /* Tech blue color */
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+            border: none;
+        }
+        .card02 button:disabled {
+            background-color: #212121;
+            cursor: not-allowed;
+        }
+        .card02 input:focus, .card02 select:focus {
+            outline: none;
+        }
+        footer {
+            background-color: #171717;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="loadingScreen">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9JVrW9kpXIQSrmqN4wIcl4VgqLxeXLxL0oQNniLQ9-Ii8ovCbkUZNc4H61kaJdB9VEOJLgSQIc9WAnsSV7njLOO1Sbf5FSn1UN0uDlyhL-oo3wOOK275aJ5nsiMEoYY0hUc32vZgmgbWcB9aozUduph_cX2tvGvwWCdudJa8FQl11TJSLvbeXpemuYZlM/s3264/20240409_181201.png" alt="Loading">
+    </div>
+<header>
+    <img src="https://mituniversity.ac.in/assets_web/images/LOGO2.png" alt="MIT ADT">
+    <div class="cross">×</div>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6hwDTxhsj7La_ocmo0pQLOSFsGuDg_29FPS1sipee5N2pb18-JPVOiSdja1dzYFvmMsr5K98cXstxYE5IMTBHni2UVVUaKpGMvvwP0pTEGJ2V4zmA1df_vKc_qh5oSehBE7WVPRzK9x2zPOd0uY12Xe7m1axuUp5iqYjeSO2F4a7PkHpJhAfypR4qAvkw/s3264/20240409_181702.png" alt="ARTXSOFT">
+</header>
+
+<div class="content">
+    
+    <div class="card">
+        <img src="https://sih.gov.in/img1/SIH2024-logo.png" alt="SIH Logo">
+    </div> 
+    <h1>Join Team ArtXSoft To Crack SIH 2024</h1>
+    <p>We are looking for passionate individuals to join our team for the Smart India Hackathon.</p>
+
+    <div class="card02">
+        <form id="recruitmentForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdStUWK5MtJtGiYGox5NJgvsuLidCQ_TRsSvp2XM8JgTITZHA/formResponse" method="POST">
+            <input type="text" id="name" name="entry.1452508607" placeholder="Name" required>
+            <input type="tel" id="phone" name="entry.1772765701" placeholder="Phone Number" required>
+            <select id="gender" name="entry.1919879072" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <select id="year" name="entry.721747953" required>
+                <option value="" disabled selected>Select Academic Year</option>
+                <option value="1st-year">1st Year</option>
+                <option value="2nd-year">2nd Year</option>
+                <option value="3rd-year">3rd Year</option>
+                <option value="4th-year">4th Year</option>
+            </select>
+            <input type="text" id="division" name="entry.161290177" placeholder="Division" required>
+            <select id="skills" name="entry.531370877" required>
+                <option value="" disabled selected>Select your skills</option>
+                <option value="html-css-js">HTML, CSS & JavaScript</option>
+                <option value="figma">Figma</option>
+                <option value="database">Database (Firebase, MongoDB, MySQL, etc.)</option>
+                <option value="nodejs">NodeJS</option>
+                <option value="django">Django</option>
+                <option value="react">React</option>
+                <option value="php">PHP</option>
+                <option value="android">Android Development (Kotlin or Java)</option>
+                <option value="ios">iOS Development (Swift)</option>
+                <option value="NativeApp">Native Development (ReactJS or Flutter)</option>
+                <option value="video-editing">Video Editing</option>
+                <option value="graphic-design">Graphic Design</option>
+                <option value="other">Other</option>                
+            </select>
+            <button type="submit" id="applyButton" disabled>Apply Now</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 ArtXSoft. All rights reserved.</p>
+    <p>Contact Number: +91 8237913246</p>
+</footer>
+
+<script>
+    const form = document.getElementById('recruitmentForm');
+    const applyButton = document.getElementById('applyButton');
+
+    if (localStorage.getItem('hasApplied')) {
+        const checkAndRedirect = setInterval(() => {
+            if (localStorage.getItem('hasApplied') === 'true') {
+                clearInterval(checkAndRedirect);
+                setTimeout(() => {
+                    window.location.href = 'done.html'; // Redirect after 100ms
+                }, 100);
+            }
+        }, 100);
+    }
+
+    form.addEventListener('input', () => {
+        const inputs = form.querySelectorAll('input, select');
+        const allFilled = Array.from(inputs).every(input => input.value.trim() !== '' && input.checkValidity());
+        applyButton.disabled = !allFilled;
+    });
+
+    form.addEventListener('submit', (event) => {
+        localStorage.setItem('hasApplied', 'true'); // Set a flag in localStorage to indicate the user has applied
+        setTimeout(() => {
+            window.location.href = 'done.html'; // Redirect after 1 second
+        }, 100);
+    });
+
+
+
+</script>
+
+<script>
+    // Hide loading screen after 3 seconds
+    setTimeout(() => {
+        const loadingScreen = document.getElementById('loadingScreen');
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 1000); // Match the opacity transition duration
+    }, 3000); // Hide after 3 seconds (3 blinks)
+</script>
+
+</body>
+</html>
+
